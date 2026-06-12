@@ -136,7 +136,7 @@ class AlgoTest:
         },
     }
 
-    def writeResultatJson(self, resultat: dict,namFile : str) -> int:
+    def writeResultatJson(self, resultat: dict) -> int:
         try:
             output_path = BASE_DIR / "resultat.json"
             with open(output_path, "w", encoding="utf-8") as file:
