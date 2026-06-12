@@ -2,7 +2,6 @@ from algoTest import AlgoTest
 
 Algo = AlgoTest()
 
-result = Algo.hedhiFixPdfFileLPointO("cvTest/cv2.pdf")
 
 result = Algo.hedhiFixPdfFileLPointO("cvTest/cv.pdf")
 

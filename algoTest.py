@@ -5,6 +5,7 @@ from pathlib import Path
 
 import ftfy
 import pdfplumber
+from datetime import datetime
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -17,6 +18,10 @@ class AlgoTest:
     CHILD_COLUMN_SPLIT_OFFSET_X = 100
     HEADER_REPLACE_OFFSET_X = 100
     WORD_LINE_TOLERANCE = 3.0
+
+    EXPERIENCE_MIN_DESCRIPTION_ITEMS = 3
+
+    YEARS = [str(year) for year in range(1950, datetime.now().year + 1)]
 
     SECTION_HEADERS = {
         "informations_personnelles": {
@@ -135,6 +140,182 @@ class AlgoTest:
             "aLotOfWords": [],
         },
     }
+
+    MONTH_NAMES = [
+        "janvier", "Janvier", "JANVIER",
+        "jan", "Jan", "JAN",
+
+        "février", "Février", "FÉVRIER",
+        "fevrier", "Fevrier", "FEVRIER",
+        "fév", "Fév", "FÉV",
+        "fev", "Fev", "FEV",
+
+        "mars", "Mars", "MARS",
+        "mar", "Mar", "MAR",
+
+        "avril", "Avril", "AVRIL",
+        "avr", "Avr", "AVR",
+
+        "mai", "Mai", "MAI",
+
+        "juin", "Juin", "JUIN",
+        "jun", "Jun", "JUN",
+
+        "juillet", "Juillet", "JUILLET",
+        "juil", "Juil", "JUIL",
+        "jul", "Jul", "JUL",
+
+        "août", "Août", "AOÛT",
+        "aout", "Aout", "AOUT",
+        "aoû", "Aoû", "AOÛ",
+
+        "septembre", "Septembre", "SEPTEMBRE",
+        "sep", "Sep", "SEP",
+        "sept", "Sept", "SEPT",
+
+        "octobre", "Octobre", "OCTOBRE",
+        "oct", "Oct", "OCT",
+
+        "novembre", "Novembre", "NOVEMBRE",
+        "nov", "Nov", "NOV",
+
+        "décembre", "Décembre", "DÉCEMBRE",
+        "decembre", "Decembre", "DECEMBRE",
+        "déc", "Déc", "DÉC",
+        "dec", "Dec", "DEC",
+    ]
+    COUNTRY_NAMES = [
+        "tunisie", "Tunisie", "TUNISIE",
+        "tunis", "Tunis", "TUNIS",
+
+        "france", "France", "FRANCE",
+        "allemagne", "Allemagne", "ALLEMAGNE",
+        "italie", "Italie", "ITALIE",
+        "espagne", "Espagne", "ESPAGNE",
+        "portugal", "Portugal", "PORTUGAL",
+        "belgique", "Belgique", "BELGIQUE",
+        "suisse", "Suisse", "SUISSE",
+        "luxembourg", "Luxembourg", "LUXEMBOURG",
+        "pays-bas", "Pays-Bas", "PAYS-BAS",
+        "hollande", "Hollande", "HOLLANDE",
+
+        "royaume-uni", "Royaume-Uni", "ROYAUME-UNI",
+        "angleterre", "Angleterre", "ANGLETERRE",
+        "écosse", "Écosse", "ÉCOSSE",
+        "ecosse", "Ecosse", "ECOSSE",
+        "irlande", "Irlande", "IRLANDE",
+
+        "maroc", "Maroc", "MAROC",
+        "algérie", "Algérie", "ALGÉRIE",
+        "algerie", "Algerie", "ALGERIE",
+        "libye", "Libye", "LIBYE",
+        "égypte", "Égypte", "ÉGYPTE",
+        "egypte", "Egypte", "EGYPTE",
+
+        "canada", "Canada", "CANADA",
+        "états-unis", "États-Unis", "ÉTATS-UNIS",
+        "etats-unis", "Etats-Unis", "ETATS-UNIS",
+        "usa", "Usa", "USA",
+
+        "chine", "Chine", "CHINE",
+        "japon", "Japon", "JAPON",
+        "inde", "Inde", "INDE",
+        "turquie", "Turquie", "TURQUIE",
+        "émirats arabes unis", "Émirats Arabes Unis", "ÉMIRATS ARABES UNIS",
+        "emirats arabes unis", "Emirats Arabes Unis", "EMIRATS ARABES UNIS",
+        "arabie saoudite", "Arabie Saoudite", "ARABIE SAOUDITE",
+    ]
+    SECTION_CHILD_OUTPUT_FIELDS = {
+        "competences": {
+            "root_text": "nomCOMPETENCES",
+            "child_text": "descriptionCOMPETENCES",
+            "fields": [
+                "nomCOMPETENCES",
+                "descriptionCOMPETENCES",
+            ],
+        },
+
+        "experience": {
+            "root_text": "nomPoste",
+            "child_text": "descriptionPoste",
+            "fields": [
+                "nomPoste",
+                "datePoste",
+                "lieuPost",
+                "paysPoste",
+                "descriptionPoste",
+            ],
+        },
+
+        "formation": {
+            "root_text": "nomFormations",
+            "child_text": "descriptionFormation",
+            "fields": [
+                "nomFormations",
+                "LieuFormations",
+                "DateFormation",
+                "descriptionFormation",
+            ],
+        },
+
+        "centres_interet": {
+            "root_text": "nomCentreInteret",
+            "child_text": "descriptionCentreInteret",
+            "fields": [
+                "nomCentreInteret",
+                "descriptionCentreInteret",
+            ],
+        },
+
+        "langues": {
+            "root_text": "nomLangue",
+            "child_text": "DescriptionLangue",
+            "fields": [
+                "nomLangue",
+                "DescriptionLangue",
+            ],
+        },
+    }
+
+    DATE_CONTEXT_WORDS = [
+        "depuis", "Depuis", "DEPUIS",
+        "de", "De", "DE",
+        "à", "À",
+        "a", "A",
+        "au", "Au", "AU",
+        "du", "Du", "DU",
+        "jusqu'à", "Jusqu'à", "JUSQU'À",
+        "jusqua", "Jusqua", "JUSQUA",
+        "présent", "Présent", "PRÉSENT",
+        "present", "Present", "PRESENT",
+        "actuel", "Actuel", "ACTUEL",
+        "actuelle", "Actuelle", "ACTUELLE",
+        "aujourd'hui", "Aujourd'hui", "AUJOURD'HUI",
+        "aujourd hui", "Aujourd Hui", "AUJOURD HUI",
+    ]
+
+
+    DESCRIPTION_ITEM_START_PATTERNS = [
+        "-",
+        "*",
+        "â€¢",
+        "â€“",
+        "â€”",
+    ]
+
+    LANGUAGE_NAMES = [
+        "anglais", "Anglais", "ANGLAIS",
+        "ang", "Ang", "ANG",
+
+        "français", "Français", "FRANÇAIS",
+        "francais", "Francais", "FRANCAIS",
+        "fr", "Fr", "FR",
+
+        "arabe", "Arabe", "ARABE",
+        "ar", "Ar", "AR",
+    ]
+    MERGE_SAME_STYLE_TITLE_LINES = True
+    MERGE_SAME_STYLE_TITLE_SEPARATOR = " "
 
     def writeResultatJson(self, resultat: dict) -> int:
         try:
@@ -668,6 +849,51 @@ class AlgoTest:
 
         return children
 
+
+
+
+
+
+
+
+
+    def _same_line_words_after_header(
+            self,
+            line_children: list[dict],
+            header: dict,
+            next_header: dict | None = None,
+    ) -> list[dict]:
+        left_limit = header["x1"]
+        right_limit = next_header["x0"] if next_header else None
+
+        result = []
+
+        for word in line_children:
+            if word["x0"] <= left_limit:
+                continue
+
+            if right_limit is not None and word["x1"] >= right_limit:
+                continue
+
+            result.append(word)
+
+        return result
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     def _find_owner_section_by_x(self, word_x: float, active_sections: list[dict]) -> dict:
         active_sections = sorted(active_sections, key=lambda section: section["x"])
 
@@ -827,20 +1053,656 @@ class AlgoTest:
             "_style": child.get("_style"),
         }
 
-    def _clean_tree_child_node(self, node: dict) -> dict:
-        clean_node = {
-            "valeur": node.get("valeur", ""),
+
+
+
+
+
+
+
+
+
+
+
+
+    def _empty_section_child_output(self, section_name: str) -> dict:
+        config = self.SECTION_CHILD_OUTPUT_FIELDS.get(section_name)
+
+        if not config:
+            return {
+                "valeur": "",
+            }
+
+        output = {
+            field_name: ""
+            for field_name in config["fields"]
         }
 
-        children = [
-            self._clean_tree_child_node(child)
-            for child in node.get("children", [])
-        ]
+        description_field = config["child_text"]
+        output[description_field] = []
 
-        if children:
-            clean_node["children"] = children
+        return output
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    def _text_contains_keyword_from_list(self, text: str, keywords: list[str]) -> bool:
+        text_words = self._normalize_phrase_to_words(text)
+
+        if not text_words:
+            return False
+
+        for keyword in keywords:
+            keyword_words = self._normalize_phrase_to_words(keyword)
+
+            if not keyword_words:
+                continue
+
+            if len(keyword_words) == 1:
+                if keyword_words[0] in text_words:
+                    return True
+
+                continue
+
+            for index in range(0, len(text_words) - len(keyword_words) + 1):
+                if text_words[index:index + len(keyword_words)] == keyword_words:
+                    return True
+
+        return False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    def _get_description_field_name(self, section_name: str) -> str:
+        config = self.SECTION_CHILD_OUTPUT_FIELDS.get(section_name)
+
+        if not config:
+            return "valeur"
+
+        return config["child_text"]
+
+
+
+
+
+
+
+    def _is_date_context_word(self, text: str) -> bool:
+        text_norm = self._normalize_text(text)
+
+        for word in self.DATE_CONTEXT_WORDS:
+            if text_norm == self._normalize_text(word):
+                return True
+
+        return False
+
+
+
+
+
+
+
+
+    def _is_date_word(self, text: str) -> bool:
+        text_norm = self._normalize_text(text)
+
+        if text_norm in [self._normalize_text(year) for year in self.YEARS]:
+            return True
+
+        for month in self.MONTH_NAMES:
+            if text_norm == self._normalize_text(month):
+                return True
+
+        return False
+
+
+    def _extract_date_part_from_text(self, text: str) -> str:
+        parts = self._split_phrase_to_parts(text)
+
+        if not parts:
+            return ""
+
+        first_date_index = None
+        last_date_index = None
+
+        for index, part in enumerate(parts):
+            if self._is_date_word(part):
+                if first_date_index is None:
+                    first_date_index = index
+
+                last_date_index = index
+
+        if first_date_index is None or last_date_index is None:
+            return ""
+
+        while first_date_index > 0 and self._is_date_context_word(parts[first_date_index - 1]):
+            first_date_index -= 1
+
+        while last_date_index + 1 < len(parts) and self._is_date_context_word(parts[last_date_index + 1]):
+            last_date_index += 1
+
+        return " ".join(
+            self._fix_text(part)
+            for part in parts[first_date_index:last_date_index + 1]
+        ).strip()
+
+
+
+
+
+
+
+
+
+
+    def _is_country_word(self, text: str) -> bool:
+        text_norm = self._normalize_text(text)
+
+        for country in self.COUNTRY_NAMES:
+            if text_norm == self._normalize_text(country):
+                return True
+
+        return False
+
+
+    def _extract_words_by_checker(self, text: str, checker) -> tuple[str, str]:
+        parts = self._split_phrase_to_parts(text)
+
+        if not parts:
+            return "", ""
+
+        selected_parts = []
+        rest_parts = []
+
+        for part in parts:
+            fixed_part = self._fix_text(part)
+
+            if checker(part):
+                selected_parts.append(fixed_part)
+            else:
+                rest_parts.append(fixed_part)
+
+        selected_text = " ".join(selected_parts).strip()
+        rest_text = " ".join(rest_parts).strip()
+
+        return selected_text, rest_text
+
+
+    def _remove_date_part_from_text(self, text: str) -> str:
+        date_part = self._extract_date_part_from_text(text)
+
+        if not date_part:
+            return text
+
+        return self._fix_text(text).replace(date_part, "").strip()
+
+
+    def _clean_lieu_poste_text(self, text: str) -> str:
+        text = self._fix_text(text)
+        text = re.sub(r"\s+", " ", text).strip()
+        text = re.sub(r"^[\s\-–—|,/]+", "", text)
+        text = re.sub(r"[\s\-–—|,/]+$", "", text)
+        text = re.sub(r"\s+([\-–—|,/])", r" \1", text)
+        return text.strip()
+
+
+
+
+
+
+
+
+
+
+
+
+
+    def _detect_specific_output_fields(self, section_name: str, text: str) -> dict:
+        detected = {}
+
+        has_date = (
+                self._text_contains_keyword_from_list(text, self.YEARS)
+                or self._text_contains_keyword_from_list(text, self.MONTH_NAMES)
+        )
+
+        has_country = self._text_contains_keyword_from_list(text, self.COUNTRY_NAMES)
+
+        if section_name == "experience":
+            rest_text = text
+
+            if has_date:
+                date_part = self._extract_date_part_from_text(rest_text)
+
+                if date_part:
+                    detected["datePoste"] = date_part
+                    rest_text = self._remove_date_part_from_text(rest_text)
+
+            if has_country:
+                country_part, rest_text = self._extract_words_by_checker(
+                    rest_text,
+                    self._is_country_word,
+                )
+
+                if country_part:
+                    detected["paysPoste"] = country_part
+
+            nom_poste = self._clean_lieu_poste_text(rest_text)
+
+            if nom_poste:
+                detected["nomPoste"] = nom_poste
+
+        elif section_name == "formation":
+            if has_date:
+                detected["DateFormation"] = text
+
+            if has_country:
+                detected["LieuFormations"] = text
+
+        return detected
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    def _first_real_char(self, text: str) -> str:
+        text = self._fix_text(text).strip()
+
+        if not text:
+            return ""
+
+        return text[0]
+
+
+    def _description_item_start_key(self, text: str) -> str:
+        text = self._fix_text(text).strip()
+
+        if not text:
+            return ""
+
+        for pattern in self.DESCRIPTION_ITEM_START_PATTERNS:
+            if text.startswith(pattern):
+                return pattern
+
+        first_char = self._first_real_char(text)
+
+        if first_char and first_char.isalpha() and first_char.isupper():
+            return "UPPERCASE_FIRST_LETTER"
+
+        return "OTHER"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    def _append_to_description(self, clean_node: dict, section_name: str, value) -> None:
+        description_field = self._get_description_field_name(section_name)
+
+        if description_field not in clean_node:
+            clean_node[description_field] = []
+
+        if not isinstance(clean_node[description_field], list):
+            old_value = clean_node[description_field]
+            clean_node[description_field] = []
+
+            if old_value:
+                clean_node[description_field].append(old_value)
+
+        values = value if isinstance(value, list) else [value]
+
+        for item in values:
+            if not item:
+                continue
+
+            item = str(item).strip()
+
+            if not item:
+                continue
+
+            if not clean_node[description_field]:
+                clean_node[description_field].append(item)
+                continue
+
+            first_key = self._description_item_start_key(clean_node[description_field][0])
+            current_key = self._description_item_start_key(item)
+
+            if current_key == first_key:
+                clean_node[description_field].append(item)
+            else:
+                clean_node[description_field][-1] = (
+                        str(clean_node[description_field][-1]).rstrip()
+                        + " "
+                        + item
+                )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    def _tree_node_to_description_text(self, node: dict) -> list:
+        result = []
+
+        text = node.get("valeur", "")
+        if text:
+            result.append(text)
+
+        for child in node.get("children", []):
+            result.extend(
+                self._tree_node_to_description_text(child)
+            )
+
+        return result
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    def _set_output_field_value(self, clean_node: dict, field_name: str, value: str) -> None:
+        if field_name not in clean_node:
+            return
+
+        if not value:
+            return
+
+        value = str(value).strip()
+
+        if not value:
+            return
+
+        current_value = clean_node[field_name]
+
+        # Description fields are lists. They have their own logic in _append_to_description.
+        if isinstance(current_value, list):
+            return
+
+        if not current_value:
+            clean_node[field_name] = value
+            return
+
+        if value not in str(current_value):
+            clean_node[field_name] = (
+                    str(current_value).rstrip()
+                    + self.MERGE_SAME_STYLE_TITLE_SEPARATOR
+                    + value
+            )
+
+
+
+
+
+
+    def _is_language_name(self, text: str) -> bool:
+        text_norm = self._normalize_text(text)
+
+        for language in self.LANGUAGE_NAMES:
+            if text_norm == self._normalize_text(language):
+                return True
+
+        return False
+
+
+    def _split_langue_text(self, text: str) -> dict | None:
+        parts = self._split_phrase_to_parts(text)
+
+        if not parts:
+            return None
+
+        first_word = self._fix_text(parts[0])
+
+        if not self._is_language_name(first_word):
+            return None
+
+        description = " ".join(
+            self._fix_text(part)
+            for part in parts[1:]
+        ).strip()
+
+        return {
+            "nomLangue": first_word,
+            "DescriptionLangue": description,
+        }
+
+
+
+
+
+
+
+
+
+
+
+    def _fill_first_level_child_output(self, node: dict, section_name: str) -> dict:
+        config = self.SECTION_CHILD_OUTPUT_FIELDS.get(section_name)
+
+        if not config:
+            return self._tree_node_to_description_text(node)
+
+        clean_node = self._empty_section_child_output(section_name)
+
+        text = node.get("valeur", "")
+
+        if section_name == "langues":
+            langue_data = self._split_langue_text(text)
+
+            if langue_data:
+                self._set_output_field_value(
+                    clean_node,
+                    "nomLangue",
+                    langue_data["nomLangue"],
+                )
+
+                if langue_data["DescriptionLangue"]:
+                    self._append_to_description(
+                        clean_node,
+                        section_name,
+                        langue_data["DescriptionLangue"],
+                    )
+
+                for child in node.get("children", []):
+                    self._append_to_description(
+                        clean_node,
+                        section_name,
+                        self._tree_node_to_description_text(child),
+                    )
+
+                return clean_node
+
+        detected_fields = self._detect_specific_output_fields(section_name, text)
+
+        if detected_fields:
+            for field_name, field_value in detected_fields.items():
+                self._set_output_field_value(clean_node, field_name, field_value)
+        else:
+            root_field = config["root_text"]
+            self._set_output_field_value(clean_node, root_field, text)
+
+        for child in node.get("children", []):
+            child_text = child.get("valeur", "")
+            child_detected_fields = self._detect_specific_output_fields(section_name, child_text)
+
+            if child_detected_fields:
+                for field_name, field_value in child_detected_fields.items():
+                    self._set_output_field_value(clean_node, field_name, field_value)
+
+                for grand_child in child.get("children", []):
+                    self._append_to_description(
+                        clean_node,
+                        section_name,
+                        self._tree_node_to_description_text(grand_child),
+                    )
+            else:
+                self._append_to_description(
+                    clean_node,
+                    section_name,
+                    self._tree_node_to_description_text(child),
+                )
 
         return clean_node
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    def _clean_tree_child_node(self, node: dict, section_name: str, level: int = 0):
+        if level == 0:
+            return self._fill_first_level_child_output(node, section_name)
+
+        return self._tree_node_to_description_text(node)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    def _merge_tree_node_text(self, old_node: dict, new_node: dict) -> None:
+        old_text = str(old_node.get("valeur", "")).strip()
+        new_text = str(new_node.get("valeur", "")).strip()
+
+        if old_text and new_text:
+            old_node["valeur"] = old_text + self.MERGE_SAME_STYLE_TITLE_SEPARATOR + new_text
+        elif new_text:
+            old_node["valeur"] = new_text
+
+        for child in new_node.get("children", []):
+            old_node.setdefault("children", []).append(child)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     def _children_lines_to_tree(self, children: list[dict]) -> list[dict]:
         roots = []
@@ -865,11 +1727,22 @@ class AlgoTest:
 
                 if old_node.get("_style") == new_style:
                     if level == 0:
-                        roots.append(new_node)
+                        if (
+                                self.MERGE_SAME_STYLE_TITLE_LINES
+                                and roots
+                                and roots[-1] is old_node
+                                and not old_node.get("children")
+                                and not new_node.get("children")
+                        ):
+                            self._merge_tree_node_text(old_node, new_node)
+                            stack = [old_node]
+                        else:
+                            roots.append(new_node)
+                            stack = [new_node]
                     else:
                         stack[level - 1]["children"].append(new_node)
+                        stack = stack[:level] + [new_node]
 
-                    stack = stack[:level] + [new_node]
                     same_level_found = True
                     break
 
@@ -877,10 +1750,69 @@ class AlgoTest:
                 stack[-1]["children"].append(new_node)
                 stack.append(new_node)
 
-        return [
-            self._clean_tree_child_node(root)
-            for root in roots
-        ]
+        return roots
+
+
+
+
+
+
+
+
+
+
+    def _merge_same_style_empty_root_titles(self, roots: list[dict]) -> list[dict]:
+        merged = []
+
+        for node in roots:
+            if not merged:
+                merged.append(node)
+                continue
+
+            previous_node = merged[-1]
+
+            previous_has_children = bool(previous_node.get("children"))
+            same_style = previous_node.get("_style") == node.get("_style")
+
+            if (
+                    self.MERGE_SAME_STYLE_TITLE_LINES
+                    and same_style
+                    and not previous_has_children
+            ):
+                previous_text = str(previous_node.get("valeur", "")).strip()
+                current_text = str(node.get("valeur", "")).strip()
+
+                if previous_text and current_text:
+                    node["valeur"] = (
+                            previous_text
+                            + self.MERGE_SAME_STYLE_TITLE_SEPARATOR
+                            + current_text
+                    )
+                elif previous_text:
+                    node["valeur"] = previous_text
+
+                merged[-1] = node
+                continue
+
+            merged.append(node)
+
+        return merged
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     def _sections_to_hierarchy_tree(self, sections: list[dict]) -> list[dict]:
         clean_sections = []
@@ -888,15 +1820,45 @@ class AlgoTest:
         for section in sections:
             clean_section = {}
 
+            hidden_output_keys = {
+                "page",
+                "line_number",
+                "x",
+                "y",
+                "x0",
+                "x1",
+                "top",
+                "bottom",
+            }
+
             for key, value in section.items():
                 if key == "children":
                     continue
 
+                if key in hidden_output_keys:
+                    continue
+
                 clean_section[key] = value
 
-            clean_section["children"] = self._children_lines_to_tree(
+
+
+
+
+            raw_tree_children = self._children_lines_to_tree(
                 section.get("children", [])
             )
+
+            raw_tree_children = self._merge_same_style_empty_root_titles(raw_tree_children)
+
+            clean_section["children"] = [
+                self._clean_tree_child_node(child, section["section"])
+                for child in raw_tree_children
+            ]
+
+
+
+
+
 
             clean_sections.append(clean_section)
 
@@ -1017,13 +1979,39 @@ class AlgoTest:
                     for line_number, line_words in enumerate(lines, start=1):
                         current_headers = headers_by_page_line.get((page_number, line_number), [])
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         if current_headers:
                             current_headers = sorted(current_headers, key=lambda item: item["x"])
+
+                            line_children = self._convert_line_words_to_center_words(
+                                line_words,
+                                page_number,
+                                line_number,
+                                page_width,
+                                page_height,
+                            )
 
                             if len(current_headers) > 1:
                                 active_sections = []
 
-                                for header in current_headers:
+                                for index, header in enumerate(current_headers):
                                     section_node = self._make_section_node_from_header(header)
 
                                     section_node = self._get_or_create_unique_section(
@@ -1033,8 +2021,46 @@ class AlgoTest:
 
                                     active_sections.append(section_node)
 
+                                    next_header = (
+                                        current_headers[index + 1]
+                                        if index + 1 < len(current_headers)
+                                        else None
+                                    )
+
+                                    same_line_words = self._same_line_words_after_header(
+                                        line_children,
+                                        header,
+                                        next_header,
+                                    )
+
+                                    child_line = self._build_child_line(same_line_words)
+
+                                    if child_line:
+                                        section_node["children"].append(child_line)
+
                                 active_sections = sorted(active_sections, key=lambda section: section["x"])
                                 continue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                             header = current_headers[0]
                             section_node = self._make_section_node_from_header(header)
@@ -1060,10 +2086,46 @@ class AlgoTest:
 
                                 active_sections = sorted(new_active_sections, key=lambda section: section["x"])
 
+
+
+
+
+
+
+
+
+
+
+
+
+
                             else:
                                 active_sections = [section_node]
 
+                            same_line_words = self._same_line_words_after_header(
+                                line_children,
+                                header,
+                            )
+
+                            child_line = self._build_child_line(same_line_words)
+
+                            if child_line:
+                                section_node["children"].append(child_line)
+
                             continue
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                         if not active_sections:
                             continue
@@ -1128,3 +2190,27 @@ class AlgoTest:
                 "message": str(e),
                 "data": [],
             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

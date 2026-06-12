@@ -1,0 +1,540 @@
+{
+  "utilisateur": {
+    "nom": "Arthur Sylvain KOUDA",
+    "prenom": "Jean",
+    "email": "sylvain_kouda@yahoo.co.uk",
+    "username": "Arthur Sylvain KOUDA.Jean"
+  },
+  "titre": "Ingénieur Senior Réseaux et Sécurité",
+  "civilite": "",
+  "email": "sylvain_kouda@yahoo.co.uk",
+  "telephone": "0627540642",
+  "description": "Ingénieur Sécurité Email avec plus de 10 ans d'expérience dans la conception, l'implémentation, la gestion et le support des réseaux Cisco. Spécialisé dans les infrastructures WiFi et les solutions SD-WAN.",
+  "nationalite": null,
+  "adresse": "173 Place Haute",
+  "ville": "Boulogne-Billancourt",
+  "codePostal": "92100",
+  "departement": "",
+  "pays": "France",
+  "langues": [
+    {
+      "name": "Anglais",
+      "level": "Bilingual / Expert"
+    },
+    {
+      "name": "Français",
+      "level": "Native / Mother Tongue"
+    }
+  ],
+  "profils": [
+    "DEA INFORMATIQUE ELECTRONIQUE ET HABITAT - RENNES I (1990)",
+    "MAITRISE INFORMATIQUE ENERGETIQUE - TOURS (1989)"
+  ],
+  "formations": [
+    {
+      "titre": "DEA INFORMATIQUE ELECTRONIQUE ET HABITAT",
+      "etablissement": "RENNES I",
+      "commentaire": null,
+      "pays": "France",
+      "anneeObtention": "1990"
+    },
+    {
+      "titre": "MAITRISE INFORMATIQUE ENERGETIQUE",
+      "etablissement": "TOURS",
+      "commentaire": null,
+      "pays": "France",
+      "anneeObtention": "1989"
+    }
+  ],
+  "ratings": null,
+  "experiences": [
+    {
+      "titre": "CHARGÉ DE PROJETS INFORMATIQUES",
+      "dateDebut": "2014-08",
+      "dateFin": "2021-02",
+      "client": "STT, Bouficha, Sousse, Tunisie",
+      "description": "Développement d'un système de gestion des congés pour réduire les conflits de planification des congés.%nMaintien d'une disponibilité de 99,9 % des systèmes, minimisant les temps d'arrêt et assurant une productivité constante.%nFormation de stagiaires et de nouveaux recrus.%nDéfinition des objectifs et des délais de réalisation."
+    }
+  ],
+  "technologies": [
+    {
+      "technology": ".NET",
+      "name": ".NET",
+      "occurrence": 1,
+      "segment": "agile_devops",
+      "sousSegment": "lead"
+    },
+    {
+      "technology": "AWS Identity and Access Management (IAM)",
+      "name": "AWS Identity and Access Management (IAM)",
+      "occurrence": 1,
+      "segment": "cloud",
+      "sousSegment": "cloud"
+    },
+    {
+      "technology": "Angular",
+      "name": "Angular",
+      "occurrence": 1,
+      "segment": "agile_devops",
+      "sousSegment": "lead"
+    },
+    {
+      "technology": "Ansible",
+      "name": "Ansible",
+      "occurrence": 1,
+      "segment": "dev_app",
+      "sousSegment": "devops"
+    },
+    {
+      "technology": "Arista",
+      "name": "Arista",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "networks"
+    },
+    {
+      "technology": "Arista Networks",
+      "name": "Arista Networks",
+      "occurrence": 1,
+      "segment": "security_expertise",
+      "sousSegment": "infra"
+    },
+    {
+      "technology": "Azure",
+      "name": "Azure",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "cloudd"
+    },
+    {
+      "technology": "BGP",
+      "name": "BGP",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "networks"
+    },
+    {
+      "technology": "Bash",
+      "name": "Bash",
+      "occurrence": 1,
+      "segment": "automation_ia",
+      "sousSegment": "automation"
+    },
+    {
+      "technology": "Bash",
+      "name": "Bash",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "systemes"
+    },
+    {
+      "technology": "Check Point",
+      "name": "Check Point",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "networks"
+    },
+    {
+      "technology": "Check Point Software",
+      "name": "Check Point Software",
+      "occurrence": 1,
+      "segment": "security_expertise",
+      "sousSegment": "cybersecurity"
+    },
+    {
+      "technology": "CircleCI",
+      "name": "CircleCI",
+      "occurrence": 1,
+      "segment": "agile_devops",
+      "sousSegment": "coach_agile_devops"
+    },
+    {
+      "technology": "Cisco",
+      "name": "Cisco",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "networks"
+    },
+    {
+      "technology": "Cisco ASA",
+      "name": "Cisco ASA",
+      "occurrence": 1,
+      "segment": "security_expertise",
+      "sousSegment": "cybersecurity"
+    },
+    {
+      "technology": "Cisco Networking Devices",
+      "name": "Cisco Networking Devices",
+      "occurrence": 1,
+      "segment": "security_expertise",
+      "sousSegment": "infra"
+    },
+    {
+      "technology": "Confluence",
+      "name": "Confluence",
+      "occurrence": 1,
+      "segment": "agile_devops",
+      "sousSegment": "coach_agile_devops"
+    },
+    {
+      "technology": "DHCP",
+      "name": "DHCP",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "networks"
+    },
+    {
+      "technology": "DLP",
+      "name": "DLP",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "security"
+    },
+    {
+      "technology": "DNS",
+      "name": "DNS",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "networks"
+    },
+    {
+      "technology": "Docker Swarm",
+      "name": "Docker Swarm",
+      "occurrence": 1,
+      "segment": "cloud",
+      "sousSegment": "cloud"
+    },
+    {
+      "technology": "F5",
+      "name": "F5",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "networks"
+    },
+    {
+      "technology": "Fortinet",
+      "name": "Fortinet",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "networks"
+    },
+    {
+      "technology": "Fortinet FortiGate",
+      "name": "Fortinet FortiGate",
+      "occurrence": 1,
+      "segment": "security_expertise",
+      "sousSegment": "cybersecurity"
+    },
+    {
+      "technology": "GDPR Compliance Solutions",
+      "name": "GDPR Compliance Solutions",
+      "occurrence": 1,
+      "segment": "security_expertise",
+      "sousSegment": "conformity"
+    },
+    {
+      "technology": "GitLab CI",
+      "name": "GitLab CI",
+      "occurrence": 1,
+      "segment": "agile_devops",
+      "sousSegment": "coach_agile_devops"
+    },
+    {
+      "technology": "Google Cloud Platform (GCP)",
+      "name": "Google Cloud Platform (GCP)",
+      "occurrence": 1,
+      "segment": "cloud",
+      "sousSegment": "cloud"
+    },
+    {
+      "technology": "IDS/IPS: Snort",
+      "name": "IDS/IPS: Snort",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "security"
+    },
+    {
+      "technology": "JIRA",
+      "name": "JIRA",
+      "occurrence": 1,
+      "segment": "agile_devops",
+      "sousSegment": "coach_agile_devops"
+    },
+    {
+      "technology": "Jenkins",
+      "name": "Jenkins",
+      "occurrence": 1,
+      "segment": "agile_devops",
+      "sousSegment": "coach_agile_devops"
+    },
+    {
+      "technology": "Juniper",
+      "name": "Juniper",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "networks"
+    },
+    {
+      "technology": "Juniper Networks",
+      "name": "Juniper Networks",
+      "occurrence": 1,
+      "segment": "security_expertise",
+      "sousSegment": "infra"
+    },
+    {
+      "technology": "Linux",
+      "name": "Linux",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "systemes"
+    },
+    {
+      "technology": "MPLS",
+      "name": "MPLS",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "networks"
+    },
+    {
+      "technology": "Microsoft Azure",
+      "name": "Microsoft Azure",
+      "occurrence": 1,
+      "segment": "cloud",
+      "sousSegment": "cloud"
+    },
+    {
+      "technology": "Microsoft Teams",
+      "name": "Microsoft Teams",
+      "occurrence": 1,
+      "segment": "agile_devops",
+      "sousSegment": "coach_agile_devops"
+    },
+    {
+      "technology": "NIST Cybersecurity Framework",
+      "name": "NIST Cybersecurity Framework",
+      "occurrence": 1,
+      "segment": "security_expertise",
+      "sousSegment": "risc"
+    },
+    {
+      "technology": "Node.js",
+      "name": "Node.js",
+      "occurrence": 1,
+      "segment": "agile_devops",
+      "sousSegment": "lead"
+    },
+    {
+      "technology": "OSPF",
+      "name": "OSPF",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "networks"
+    },
+    {
+      "technology": "Palo Alto",
+      "name": "Palo Alto",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "networks"
+    },
+    {
+      "technology": "Palo Alto Networks",
+      "name": "Palo Alto Networks",
+      "occurrence": 1,
+      "segment": "security_expertise",
+      "sousSegment": "cybersecurity"
+    },
+    {
+      "technology": "Python",
+      "name": "Python",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "scripting"
+    },
+    {
+      "technology": "Python",
+      "name": "Python",
+      "occurrence": 1,
+      "segment": "automation_ia",
+      "sousSegment": "automation"
+    },
+    {
+      "technology": "Python",
+      "name": "Python",
+      "occurrence": 1,
+      "segment": "dev_app",
+      "sousSegment": "back"
+    },
+    {
+      "technology": "REST",
+      "name": "REST",
+      "occurrence": 1,
+      "segment": "dev_app",
+      "sousSegment": "back"
+    },
+    {
+      "technology": "React",
+      "name": "React",
+      "occurrence": 1,
+      "segment": "agile_devops",
+      "sousSegment": "lead"
+    },
+    {
+      "technology": "Slack",
+      "name": "Slack",
+      "occurrence": 1,
+      "segment": "agile_devops",
+      "sousSegment": "coach_agile_devops"
+    },
+    {
+      "technology": "TCP/IP",
+      "name": "TCP/IP",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "networks"
+    },
+    {
+      "technology": "Terraform",
+      "name": "Terraform",
+      "occurrence": 1,
+      "segment": "dev_app",
+      "sousSegment": "devops"
+    },
+    {
+      "technology": "Travis CI",
+      "name": "Travis CI",
+      "occurrence": 1,
+      "segment": "agile_devops",
+      "sousSegment": "coach_agile_devops"
+    },
+    {
+      "technology": "VMware",
+      "name": "VMware",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "virtualization"
+    },
+    {
+      "technology": "VPN",
+      "name": "VPN",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "networks"
+    },
+    {
+      "technology": "Windows Server",
+      "name": "Windows Server",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "systemes"
+    },
+    {
+      "technology": "Wireshark",
+      "name": "Wireshark",
+      "occurrence": 1,
+      "segment": "security_expertise",
+      "sousSegment": "vulnerabilites"
+    },
+    {
+      "technology": "unknown",
+      "name": "Ansible",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    },
+    {
+      "technology": "unknown",
+      "name": "Cisco FirePOWER",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    },
+    {
+      "technology": "unknown",
+      "name": "Cisco IronPort Email Security Appliance",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    },
+    {
+      "technology": "unknown",
+      "name": "Python",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    },
+    {
+      "technology": "unknown",
+      "name": "Terraform",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    },
+    {
+      "technology": "unknown",
+      "name": "Threat Grid",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    }
+  ],
+  "certifications": [
+    {
+      "titre": "Cisco CCNA",
+      "etablissement": "",
+      "pays": null,
+      "dateObtention": null,
+      "dateExpiration": null,
+      "lienCertification": ""
+    },
+    {
+      "titre": "Cisco CCDA",
+      "etablissement": "",
+      "pays": null,
+      "dateObtention": null,
+      "dateExpiration": null,
+      "lienCertification": ""
+    },
+    {
+      "titre": "Cisco CCNP",
+      "etablissement": "",
+      "pays": null,
+      "dateObtention": null,
+      "dateExpiration": null,
+      "lienCertification": ""
+    },
+    {
+      "titre": "Cisco CCVP",
+      "etablissement": "",
+      "pays": null,
+      "dateObtention": null,
+      "dateExpiration": null,
+      "lienCertification": ""
+    },
+    {
+      "titre": "Cisco CCIP",
+      "etablissement": "",
+      "pays": null,
+      "dateObtention": null,
+      "dateExpiration": null,
+      "lienCertification": ""
+    },
+    {
+      "titre": "Cisco CCDP",
+      "etablissement": "",
+      "pays": null,
+      "dateObtention": null,
+      "dateExpiration": null,
+      "lienCertification": ""
+    },
+    {
+      "titre": "CCIE Routing and Switching written",
+      "etablissement": "",
+      "pays": null,
+      "dateObtention": null,
+      "dateExpiration": null,
+      "lienCertification": ""
+    }
+  ],
+  "dateDerniereMiseAJour": "2025-05-11T10:26:45.932067607"
+}

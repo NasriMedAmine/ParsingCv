@@ -1,0 +1,275 @@
+{
+  "utilisateur": {
+    "nom": "KELI",
+    "prenom": "Henri",
+    "email": "",
+    "username": "KELI.Henri"
+  },
+  "titre": "Administrateur de Sauvegarde et Stockage",
+  "civilite": "",
+  "email": "",
+  "telephone": "0695216245",
+  "description": "Administrateur de Sauvegarde et Stockage avec 15 années d’expérience.",
+  "nationalite": null,
+  "adresse": "147 avenue joseph Vidal",
+  "ville": "Marseille",
+  "codePostal": "13008",
+  "departement": "",
+  "pays": "France",
+  "langues": [
+    {
+      "name": "Anglais",
+      "level": "Fluent"
+    },
+    {
+      "name": "Français",
+      "level": "Native / Mother Tongue"
+    }
+  ],
+  "profils": [
+    "BAC +3 -  (2003)",
+    "Certificate of Higher education Spécialisé dans le système de gestion de base de données relationnelle et la finance - London Guildhall (2000)",
+    "BAC sciences économiques et sociologie - lycée DESCARTES (1993)"
+  ],
+  "formations": [
+    {
+      "titre": "BAC +3",
+      "etablissement": "",
+      "commentaire": null,
+      "pays": "",
+      "anneeObtention": "2003"
+    },
+    {
+      "titre": "Certificate of Higher education Spécialisé dans le système de gestion de base de données relationnelle et la finance",
+      "etablissement": "London Guildhall",
+      "commentaire": null,
+      "pays": "",
+      "anneeObtention": "2000"
+    },
+    {
+      "titre": "BAC sciences économiques et sociologie",
+      "etablissement": "lycée DESCARTES",
+      "commentaire": null,
+      "pays": "",
+      "anneeObtention": "1993"
+    }
+  ],
+  "ratings": null,
+  "experiences": [],
+  "technologies": [
+    {
+      "technology": ".NET",
+      "name": ".NET",
+      "occurrence": 1,
+      "segment": "agile_devops",
+      "sousSegment": "lead"
+    },
+    {
+      "technology": "Amazon S3",
+      "name": "Amazon S3",
+      "occurrence": 1,
+      "segment": "cloud",
+      "sousSegment": "cloud"
+    },
+    {
+      "technology": "Brocade Networking",
+      "name": "Brocade Networking",
+      "occurrence": 1,
+      "segment": "security_expertise",
+      "sousSegment": "infra"
+    },
+    {
+      "technology": "Cisco Networking Devices",
+      "name": "Cisco Networking Devices",
+      "occurrence": 1,
+      "segment": "security_expertise",
+      "sousSegment": "infra"
+    },
+    {
+      "technology": "Data Mining",
+      "name": "Data Mining",
+      "occurrence": 1,
+      "segment": "data",
+      "sousSegment": "mining"
+    },
+    {
+      "technology": "Data Warehousing",
+      "name": "Data Warehousing",
+      "occurrence": 1,
+      "segment": "data",
+      "sousSegment": "big_data"
+    },
+    {
+      "technology": "Dell EMC Networking",
+      "name": "Dell EMC Networking",
+      "occurrence": 1,
+      "segment": "security_expertise",
+      "sousSegment": "infra"
+    },
+    {
+      "technology": "Hitachi",
+      "name": "Hitachi",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "stockage"
+    },
+    {
+      "technology": "JIRA",
+      "name": "JIRA",
+      "occurrence": 1,
+      "segment": "agile_devops",
+      "sousSegment": "coach_agile_devops"
+    },
+    {
+      "technology": "NAS",
+      "name": "NAS",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "stockage"
+    },
+    {
+      "technology": "Nessus Vulnerability Scanner",
+      "name": "Nessus Vulnerability Scanner",
+      "occurrence": 1,
+      "segment": "security_expertise",
+      "sousSegment": "vulnerabilites"
+    },
+    {
+      "technology": "NetApp",
+      "name": "NetApp",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "stockage"
+    },
+    {
+      "technology": "NetBackup",
+      "name": "NetBackup",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "sauvegarde"
+    },
+    {
+      "technology": "SAN",
+      "name": "SAN",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "stockage"
+    },
+    {
+      "technology": "Slack",
+      "name": "Slack",
+      "occurrence": 1,
+      "segment": "agile_devops",
+      "sousSegment": "coach_agile_devops"
+    },
+    {
+      "technology": "Symantec Endpoint Protection",
+      "name": "Symantec Endpoint Protection",
+      "occurrence": 1,
+      "segment": "security_expertise",
+      "sousSegment": "cybersecurity"
+    },
+    {
+      "technology": "VMware",
+      "name": "VMware",
+      "occurrence": 1,
+      "segment": "infrastructure",
+      "sousSegment": "virtualization"
+    },
+    {
+      "technology": "unknown",
+      "name": "Ansible",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    },
+    {
+      "technology": "unknown",
+      "name": "Avamar",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    },
+    {
+      "technology": "unknown",
+      "name": "Brocade",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    },
+    {
+      "technology": "unknown",
+      "name": "DPA",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    },
+    {
+      "technology": "unknown",
+      "name": "Data Domain",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    },
+    {
+      "technology": "unknown",
+      "name": "Data Protection Advisor",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    },
+    {
+      "technology": "unknown",
+      "name": "EMC",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    },
+    {
+      "technology": "unknown",
+      "name": "ISO 20K",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    },
+    {
+      "technology": "unknown",
+      "name": "Netbackup",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    },
+    {
+      "technology": "unknown",
+      "name": "Networker",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    },
+    {
+      "technology": "unknown",
+      "name": "OPScenter",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    },
+    {
+      "technology": "unknown",
+      "name": "Opscenter",
+      "occurrence": 1,
+      "segment": "other",
+      "sousSegment": "unknown"
+    }
+  ],
+  "certifications": [
+    {
+      "titre": "Symantec Netbackup (certifié DPD, DPI, DPS, Support Engineer et STS)",
+      "etablissement": "",
+      "pays": null,
+      "dateObtention": null,
+      "dateExpiration": null,
+      "lienCertification": ""
+    }
+  ],
+  "dateDerniereMiseAJour": "2025-05-14T08:12:03.726390788"
+}
