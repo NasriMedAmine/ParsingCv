@@ -9,7 +9,8 @@ echo.
 set /p msg=Commit message: 
 
 git add .
-
+git remote add origin https://github.com/NasriMedAmine/ParsingCv.git
+git branch -M main
 git commit -m "%msg%"
 
 git push origin main
